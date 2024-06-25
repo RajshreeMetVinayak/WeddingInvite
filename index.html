@@ -16,7 +16,7 @@
 <script>
   var slides = [];
 
-  for (var i = 0; i < 100; i++) {
+  for (var i = 0; i < 81; i++) {
 	slides.push({src: 'images/'+[i]+'.jpg'});
   }
 
@@ -24,6 +24,8 @@
   	var myjR3DCarousel = $('.jR3DCarouselGallery').jR3DCarousel({
 					slides: slides,
 					slideLayout: "contain",
+          animationCurve: "cubic-bezier(0.4, 0.6, 0.11, 0.19)",
+          navigation: null,
 	});
   });
 </script>
