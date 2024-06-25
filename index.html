@@ -15,11 +15,11 @@
 <script src="https://cdn.rawgit.com/vinayakjadhav/jR3DCarousel/v1.0.0/dist/jR3DCarousel.min.js"></script>
 <script>
   var slides = [];
- 
+
   for (var i = 0; i < 10; i++) {
-	slides.push({src: [i]+'.jpg'});
+	slides.push({src: 'images/'+[i]+'.jpg'});
   }
-  
+
   $(document).ready(function(){
   	var myjR3DCarousel = $('.jR3DCarouselGallery').jR3DCarousel({
 					slides: slides,
