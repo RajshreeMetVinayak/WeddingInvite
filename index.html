@@ -3,14 +3,17 @@
 <head>
 <title>RajshreeMetVinayak</title>
 <style>
-  h1 {
-	display: flex;
-  	justify-content: center;
-    	font-family: sans-serif;
-  }
+    h1 {
+      font-family: sans-serif;
+      position: absolute;
+      z-index: 9;
+      margin: 0 auto;
+      left: 40%;
+      color: cyan;
+    }
 
   .jR3DCarouselGallery {
-    height: '75vh',
+    height: 100vh!important;
   }
 </style>
 <!-- add jQuery if not already present in your project -->
@@ -20,14 +23,14 @@
 <script>
   var slides = [];
 
-  for (var i = 0; i < 81; i++) {
+  for (var i = 0; i < 77; i++) {
 	slides.push({src: 'images/'+[i]+'.jpg'});
   }
 
   $(document).ready(function(){
   	var myjR3DCarousel = $('.jR3DCarouselGallery').jR3DCarousel({
           slides: slides,
-					slideLayout: "contain",
+					slideLayout: "fill",
           animationCurve: "cubic-bezier(0.4, 0.6, 0.11, 0.19)",
           navigation: null,
 	  });
