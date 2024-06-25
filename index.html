@@ -14,15 +14,12 @@
 <!-- add jR3DCarousel plugin -->
 <script src="https://cdn.rawgit.com/vinayakjadhav/jR3DCarousel/v1.0.0/dist/jR3DCarousel.min.js"></script>
 <script>
-  var slides = [
-  	{src: '1.jpg'},
-  	{src: 'https://unsplash.it/1366/761'},
-  	{src: 'https://unsplash.it/1366/762'},
-  	{src: 'https://unsplash.it/1366/763'},
-  	{src: 'https://unsplash.it/1366/764'},
-  	{src: 'https://unsplash.it/1366/765'},
-  	{src: 'https://unsplash.it/1366/766'}
-  ];
+  var slides = [];
+ 
+  for (var i = 0; i < 10; i++) {
+	slides.push({src: 'https://unsplash.it/1366/761'+[i]+'.jpg'});
+  }
+  
   $(document).ready(function(){
   	var myjR3DCarousel = $('.jR3DCarouselGallery').jR3DCarousel({
 					slides: slides,
