@@ -33,13 +33,13 @@
 
   $(document).ready(function(){
   	var myjR3DCarousel = $('.jR3DCarouselGallery').jR3DCarousel({
-          slides: slides.sort(() => Math.random() - 0.5),
+          slides: slides.sort(() => Math.random() - 0.5).slice(0,20),
 					slideLayout: "fill",
           navigation: null,
           perspective: 60,
 	  });
 
-    var newSlides = slides.sort(() => Math.random() - 0.5);
+    var newSlides = slides.sort(() => Math.random() - 0.5).slice(0,20);
     var myjR3DCarousel = $('.jR3DCarouselCustomGallery').jR3DCarousel({
           slides: newSlides,
 					slideLayout: "cover",
