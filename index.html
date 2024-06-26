@@ -23,7 +23,7 @@
 <script>
   var slides = [];
 
-  for (var i = 0; i < 77; i++) {
+  for (var i = 0; i < 71; i++) {
 	   slides.push({src: 'images/'+[i+1]+'.jpg'});
   }
 
@@ -35,8 +35,9 @@
           perspective: 50,
 	  });
 
+    var newSlides = slides.reverse();
     var myjR3DCarousel = $('.jR3DCarouselCustomGallery').jR3DCarousel({
-          slides: slides.reverse(),
+          slides: newSlides,
 					slideLayout: "cover",
           navigation: null,
 	  });
