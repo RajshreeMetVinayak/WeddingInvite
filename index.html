@@ -23,7 +23,7 @@
 <!-- add jQuery if not already present in your project -->
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js'></script>
 <!-- add jR3DCarousel plugin -->
-<script src="index.js"></script>
+<script src="https://cdn.rawgit.com/vinayakjadhav/jR3DCarousel/v1.0.0/dist/jR3DCarousel.min.js"></script>
 <script>
   var slides = [];
 
@@ -33,13 +33,13 @@
 
   $(document).ready(function(){
   	var myjR3DCarousel = $('.jR3DCarouselGallery').jR3DCarousel({
-          slides: slides.sort(() => Math.random() - 0.5).slice(0,70),
+          slides: slides.sort(() => Math.random() - 0.5).slice(0,10),
 					slideLayout: "fill",
           navigation: '',
           perspective: 770,
 	  });
 
-    var newSlides = slides.sort(() => Math.random() - 0.5).slice(0,70);
+    var newSlides = slides.sort(() => Math.random() - 0.5).slice(0,10);
     var myjR3DCarousel = $('.jR3DCarouselCustomGallery').jR3DCarousel({
           slides: newSlides,
 					slideLayout: "cover",
