@@ -29,13 +29,13 @@
 
   $(document).ready(function(){
   	var myjR3DCarousel = $('.jR3DCarouselGallery').jR3DCarousel({
-          slides: slides,
+          slides: slides.slice(0,10),
 					slideLayout: "fill",
           navigation: null,
-          perspective: 50,
+          perspective: 500,
 	  });
 
-    var newSlides = slides.reverse();
+    var newSlides = slides.reverse().slice(60,70);
     var myjR3DCarousel = $('.jR3DCarouselCustomGallery').jR3DCarousel({
           slides: newSlides,
 					slideLayout: "cover",
