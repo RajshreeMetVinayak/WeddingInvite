@@ -35,15 +35,16 @@
   	var myjR3DCarousel = $('.jR3DCarouselGallery').jR3DCarousel({
           slides: slides.sort(() => Math.random() - 0.5).slice(0,10),
 					slideLayout: "fill",
-          navigation: null,
-          perspective: 200,
+          navigation: '',
+          perspective: 770,
 	  });
 
     var newSlides = slides.sort(() => Math.random() - 0.5).slice(0,10);
     var myjR3DCarousel = $('.jR3DCarouselCustomGallery').jR3DCarousel({
           slides: newSlides,
 					slideLayout: "cover",
-          navigation: null,
+          navigation: '',
+          rotationDirection: 'rtl',
 	  });
   });
 </script>
