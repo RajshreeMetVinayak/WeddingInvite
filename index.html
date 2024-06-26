@@ -7,9 +7,13 @@
 	    display: flex;
   	  justify-content: center;
       font-family: sans-serif;
+  }
+  .HeadingjR3DCarouselGallery{
       color: fuchsia;
   }
-
+  .HeadingjR3DCarouselCustomGallery{
+      color: cyan;
+  }
   .jR3DCarouselGallery {
     width: 62vw!important;
     height: 67vh!important;
@@ -29,13 +33,13 @@
 
   $(document).ready(function(){
   	var myjR3DCarousel = $('.jR3DCarouselGallery').jR3DCarousel({
-          slides: slides.slice(0,10),
+          slides: slides.sort(() => Math.random() - 0.5),
 					slideLayout: "fill",
           navigation: null,
-          perspective: 500,
+          perspective: 50,
 	  });
 
-    var newSlides = slides.reverse().slice(60,70);
+    var newSlides = slides.sort(() => Math.random() - 0.5);
     var myjR3DCarousel = $('.jR3DCarouselCustomGallery').jR3DCarousel({
           slides: newSlides,
 					slideLayout: "cover",
@@ -45,9 +49,9 @@
 </script>
 </head>
 <body>
-  <h1> Rajshree Met Vinayak </h1>
+  <h1 class="HeadingjR3DCarouselGallery"> Rajshree Met Vinayak </h1>
   <div class="jR3DCarouselGallery"></div>
-  <h1> Rajshree Met Vinayak </h1>
+  <h1 class="HeadingjR3DCarouselCustomGallery"> Rajshree Met Vinayak </h1>
   <div class="jR3DCarouselCustomGallery"></div>
 </body>
 </html>
